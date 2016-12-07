@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    150708,       5109]
-NotebookOptionsPosition[    119983,       4045]
-NotebookOutlinePosition[    120932,       4076]
-CellTagsIndexPosition[    120764,       4070]
+NotebookDataLength[    207353,       6471]
+NotebookOptionsPosition[    175879,       5382]
+NotebookOutlinePosition[    176831,       5413]
+CellTagsIndexPosition[    176663,       5407]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3873,11 +3873,12 @@ Cell["Clearing/Deleting a function", "Section",
  CellChangeTimes->{{3.690083304763583*^9, 3.69008331309914*^9}}],
 
 Cell["\<\
-we can delete a function from its existence using Clear[fn_name] method\
-\[LineSeparator]same as variables.\
+we can delete a function from its existence using Clear[fn_name] method same \
+as variables.\
 \>", "Item",
  CellChangeTimes->{{3.690083314846305*^9, 3.690083336951041*^9}, {
-  3.6900841931130247`*^9, 3.690084197529971*^9}}],
+  3.6900841931130247`*^9, 3.690084197529971*^9}, {3.6900863718850145`*^9, 
+  3.690086374072483*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -3918,11 +3919,11 @@ Cell[" for comment we can use (* and *) in mathematica", "Item",
  CellChangeTimes->{{3.6900836193240137`*^9, 3.690083633514475*^9}}],
 
 Cell["\<\
-when we define a function we may add some documentation to it so that\
-\[LineSeparator]any one can easily able to understand the basic functionality \
-of that funciton.\
+when we define a function we may add some documentation to it so that any one \
+can easily able to understand the basic functionality of that funciton.\
 \>", "Item",
- CellChangeTimes->{{3.6900836193240137`*^9, 3.690083681905259*^9}}],
+ CellChangeTimes->{{3.6900836193240137`*^9, 3.690083681905259*^9}, {
+  3.6900863518430333`*^9, 3.6900863529417644`*^9}}],
 
 Cell["\<\
  for getting help about any method we can use ?<function_name> \
@@ -4042,11 +4043,1347 @@ occurs.\
 }, Open  ]]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell["Plotting in Mathematica", "Chapter",
- CellChangeTimes->{{3.6900845061642003`*^9, 3.690084512661532*^9}}]
+ CellChangeTimes->{{3.6900845061642003`*^9, 3.690084512661532*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Barchart ", "Section",
+ CellChangeTimes->{{3.6900858863317347`*^9, 3.69008588814194*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"alist", "=", 
+   RowBox[{"{", 
+    RowBox[{"4500", ",", "3000", ",", "2150", ",", "5879"}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.6900858913791018`*^9, 3.690085910487838*^9}, 
+   3.690085995270364*^9}],
+
+Cell["\<\
+for making barchart from a data we have to use Barchart[list] keyword\
+\>", "Item",
+ CellChangeTimes->{{3.6900859113874383`*^9, 3.6900859319991827`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarChart", "[", "alist", "]"}]], "Input",
+ CellChangeTimes->{{3.6900859848334045`*^9, 3.690086032086138*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {Opacity[0], PointBox[{0.4655474452554744, 0.}]}, {{}, 
+    {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+     0.6719999999999999], Thickness[Small]}], 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6719999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            EdgeForm[{
+              GrayLevel[0.5], 
+              AbsoluteThickness[1.5], 
+              Opacity[0.66]}], {}, {}], 
+           
+           RectangleBox[{0.5437956204379562, 0.}, {1.4562043795620436`, 
+            4500.}, "RoundingRadius" -> 0]},
+          
+          ImageSizeCache->{{33.949181437280785`, 
+           115.23823737572286`}, {-57.36468163998896, 108.25674931298138`}}],
+         StatusArea[#, 4500]& ,
+         TagBoxNote->"4500"],
+        StyleBox["4500", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[4500, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6719999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            EdgeForm[{
+              GrayLevel[0.5], 
+              AbsoluteThickness[1.5], 
+              Opacity[0.66]}], {}, {}], 
+           
+           RectangleBox[{1.543795620437956, 0.}, {2.4562043795620436`, 3000.},
+             "RoundingRadius" -> 0]},
+          
+          ImageSizeCache->{{122.43918674581329`, 
+           203.72824268425535`}, {-2.3408713223321485`, 108.2567493129814}}],
+         StatusArea[#, 3000]& ,
+         TagBoxNote->"3000"],
+        StyleBox["3000", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[3000, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6719999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            EdgeForm[{
+              GrayLevel[0.5], 
+              AbsoluteThickness[1.5], 
+              Opacity[0.66]}], {}, {}], 
+           
+           RectangleBox[{2.543795620437956, 0.}, {3.4562043795620436`, 2150.},
+             "RoundingRadius" -> 0]},
+          
+          ImageSizeCache->{{210.9291920543458, 292.21824799278795`}, {
+           28.839287857673355`, 108.25674931298141`}}],
+         StatusArea[#, 2150]& ,
+         TagBoxNote->"2150"],
+        StyleBox["2150", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[2150, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6719999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            EdgeForm[{
+              GrayLevel[0.5], 
+              AbsoluteThickness[1.5], 
+              Opacity[0.66]}], {}, {}], 
+           
+           RectangleBox[{3.543795620437956, 0.}, {4.456204379562044, 5879.}, 
+            "RoundingRadius" -> 0]},
+          
+          ImageSizeCache->{{299.4191973628783, 
+           380.70825330132044`}, {-107.94990459202141`, 108.2567493129814}}],
+         StatusArea[#, 5879]& ,
+         TagBoxNote->"5879"],
+        StyleBox["5879", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[5879, {}], "Tooltip"]& ]}}, {}, {}}, {}, {}, 
+   StyleBox[
+    StyleBox[{
+      {Thickness[Tiny], 
+       LineBox[{{0.4655474452554744, 0.}, {4.536017518248175, 0.}}], 
+       StyleBox[{}, "GraphicsLabel",
+        StripOnInput->False]}, 
+      StyleBox[{
+        {Thickness[Tiny], 
+         LineBox[{{0.5437956204379562, 0.}, 
+           Offset[{-1.102182119232618*^-15, -6.}, {0.5437956204379562, 0.}]}],
+          LineBox[{{4.456204379562044, 0.}, 
+           Offset[{-1.102182119232618*^-15, -6.}, {4.456204379562044, 
+            0.}]}], {{}, {}, {}, {}, {}, {}}}, 
+        StyleBox[{}, "GraphicsLabel",
+         StripOnInput->False]}, "GraphicsTicks",
+       StripOnInput->False]},
+     Antialiasing->False], "GraphicsAxes",
+    StripOnInput->False]},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{False, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0.4655474452554744, 0.},
+  CoordinatesToolOptions:>{"DisplayFunction" -> ({
+      Identity[
+       Part[#, 1]], 
+      Identity[
+       Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+      Identity[
+       Part[#, 1]], 
+      Identity[
+       Part[#, 2]]}& )},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {{{0.9999999999999999, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}, {1.9999999999999998`, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}, {3., 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}, {4., 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}}, {{0.9999999999999999, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}, {1.9999999999999998`, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}, {3., 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}, {4., 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> Baseline], 
+          "CacheGraphics" -> False], 
+         Spacer[0]], TraditionalForm], {0.004, 0}}}}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  PlotRange->{{All, All}, {All, All}},
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{None, Automatic}]], "Output",
+ CellChangeTimes->{{3.690086004224331*^9, 3.6900860327035465`*^9}}]
+}, Open  ]],
+
+Cell["BarChart3D[list] forms a 3D chart which we can roll ", "Item",
+ CellChangeTimes->{{3.690086053959715*^9, 3.690086069780262*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarChart3D", "[", "alist", "]"}]], "Input",
+ CellChangeTimes->{{3.6900860715774755`*^9, 3.6900860777005415`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   StyleBox[{
+     {EdgeForm[GrayLevel[0.85]], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.02, 0.02}], Scaled[{0.985, 0.02, 0.02}], 
+        Scaled[{0.985, 0.98, 0.02}], Scaled[{0.015, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.02, 0.02}], Scaled[{0.985, 0.02, 0.02}], 
+        Scaled[{1, 0, 0}], Scaled[{0, 0, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.985, 0.02, 0.02}], Scaled[{1, 0, 0}], Scaled[{1, 1, 0}], 
+        Scaled[{0.985, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0.985, 0.98, 0.02}], 
+        Scaled[{1, 1, 0}], Scaled[{0, 0.99999, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.02, 0.02}], Scaled[{0, 0, 0}], 
+        Scaled[{0, 0.99999, 0}], Scaled[{0.015, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0, 0, 0}], Scaled[{1, 0, 0}], Scaled[{1, 1, 0}], 
+        Scaled[{0, 0.99999, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}]}, 
+     {Opacity[0], EdgeForm[None], 
+      CuboidBox[{{-0.21440000000000003`, -0.25, 0}, {4.502400000000001, 1.25, 
+        0.024}}]}, 
+     {EdgeForm[None], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0.985, 0.98, 0.02}], 
+        Scaled[{0.985, 0.98, 0.98}], Scaled[{0.015, 0.98, 0.98}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0.985, 0.98, 0.02}], 
+        Scaled[{1, 1, 0}], Scaled[{0, 0.99999, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{1, 1, 0}], Scaled[{1, 1, 1}], Scaled[{0.985, 0.98, 0.98}], 
+        Scaled[{0.985, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.98}], Scaled[{0.985, 0.98, 0.98}], 
+        Scaled[{1, 1, 1}], Scaled[{0, 1, 1}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0, 0.99999, 0}], 
+        Scaled[{0, 1, 1}], Scaled[{0.015, 0.98, 0.98}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0, 0.99999, 0}], Scaled[{1, 1, 0}], Scaled[{1, 1, 1}], 
+        Scaled[{0, 1, 1}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.97858, 0.678934, 0.157834]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.98572, 0.785956, 0.43855599999999995`]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.99048, 0.857304, 0.6257039999999999]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}]}},
+    StripOnInput->False,
+    Lighting->{{"Ambient", 
+       GrayLevel[1]}}], 
+   {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+    0.1]}], 
+    {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+     0.1]}], 
+     {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+      0.1]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            Directive[
+             EdgeForm[
+              Directive[
+               RGBColor[
+               0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+               AbsoluteThickness[1.5]]]], {}, {}], 
+           StyleBox[{
+             
+             GraphicsComplex3DBox[{{0., 0., 0.}, {0., 1., 0.}, {0., 1., 
+              4500.}, {0., 0., 4500.}, {1., 0., 0.}, {1., 1., 0.}, {1., 1., 
+              4500.}, {1., 0., 4500.}}, {
+               Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917]}], 
+               Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}]}]}, 
+            Lighting -> {{"Ambient", 
+               GrayLevel[1]}}, StripOnInput -> False]},
+          
+          ImageSizeCache->{{46.20743986864818, 
+           159.779061436419}, {-83.21950223347835, 136.37378414895548`}}],
+         StatusArea[#, 4500]& ,
+         TagBoxNote->"4500"],
+        StyleBox["4500", {"Graphics3DLabel"}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[4500, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+     {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+      0.1]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            Directive[
+             EdgeForm[
+              Directive[
+               RGBColor[
+               0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+               AbsoluteThickness[1.5]]]], {}, {}], 
+           StyleBox[{
+             
+             GraphicsComplex3DBox[{{1.096, 0., 0.}, {1.096, 1., 0.}, {1.096, 
+              1., 3000.}, {1.096, 0., 3000.}, {2.096, 0., 0.}, {2.096, 1., 
+              0.}, {2.096, 1., 3000.}, {2.096, 0., 3000.}}, {
+               Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917]}], 
+               Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}]}]}, 
+            Lighting -> {{"Ambient", 
+               GrayLevel[1]}}, StripOnInput -> False]},
+          
+          ImageSizeCache->{{147.1275984538591, 
+           260.12552661233747`}, {-13.880210858410322`, 135.3451715846032}}],
+         StatusArea[#, 3000]& ,
+         TagBoxNote->"3000"],
+        StyleBox["3000", {"Graphics3DLabel"}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[3000, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+     {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+      0.1]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            Directive[
+             EdgeForm[
+              Directive[
+               RGBColor[
+               0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+               AbsoluteThickness[1.5]]]], {}, {}], 
+           StyleBox[{
+             
+             GraphicsComplex3DBox[{{2.192, 0., 0.}, {2.192, 1., 0.}, {2.192, 
+              1., 2150.}, {2.192, 0., 2150.}, {3.192, 0., 0.}, {3.192, 1., 
+              0.}, {3.192, 1., 2150.}, {3.192, 0., 2150.}}, {
+               Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917]}], 
+               Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}]}]}, 
+            Lighting -> {{"Ambient", 
+               GrayLevel[1]}}, StripOnInput -> False]},
+          
+          ImageSizeCache->{{249.15528327900472`, 361.84879689196106`}, {
+           25.096820982287582`, 134.30542644237033`}}],
+         StatusArea[#, 2150]& ,
+         TagBoxNote->"2150"],
+        StyleBox["2150", {"Graphics3DLabel"}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[2150, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+     {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+      0.1]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         DynamicBox[{
+           FEPrivate`If[
+            CurrentValue["MouseOver"], 
+            Directive[
+             EdgeForm[
+              Directive[
+               RGBColor[
+               0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+               AbsoluteThickness[1.5]]]], {}, {}], 
+           StyleBox[{
+             
+             GraphicsComplex3DBox[{{3.2880000000000003`, 0., 0.}, {
+              3.2880000000000003`, 1., 0.}, {3.2880000000000003`, 1., 
+              5879.}, {3.2880000000000003`, 0., 5879.}, {4.288, 0., 0.}, {
+              4.288, 1., 0.}, {4.288, 1., 5879.}, {4.288, 0., 5879.}}, {
+               Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917]}], 
+               Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.48929, 0.339467, 0.078917], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.97858, 0.678934, 0.157834]}], 
+               Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+               Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.97858, 0.678934, 0.157834], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668], 
+                  RGBColor[0.995716, 0.9357868, 0.8315668]}]}]}, 
+            Lighting -> {{"Ambient", 
+               GrayLevel[1]}}, StripOnInput -> False]},
+          
+          ImageSizeCache->{{351.92128554502267`, 
+           464.6845213304981}, {-156.39401390257723`, 133.25436700864333`}}],
+         StatusArea[#, 5879]& ,
+         TagBoxNote->"5879"],
+        StyleBox["5879", {"Graphics3DLabel"}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[5879, {"Graphics3DLabel"}], "Tooltip"]& ]}}}, {}, {}},
+  Axes->{True, True, True},
+  AxesEdge->{{-1, -1}, {1, -1}, {-1, 1}},
+  AxesLabel->{None, None, None},
+  BoxRatios->
+   NCache[{1, 0.23320895522388058`, GoldenRatio^(-1)}, {
+    1, 0.23320895522388058`, 0.6180339887498948}],
+  Boxed->False,
+  FaceGrids->{{{0, 1, 0}, {None, Automatic}}, {{0, 0, -1}, {
+     None, None}}, {{-1, 0, 0}, {None, None}}},
+  FaceGridsStyle->Automatic,
+  ImageSize->{464.55063391082007`, 293.5159722282538},
+  ImageSizeRaw->Automatic,
+  Lighting->"Neutral",
+  Method->{"RotationControl" -> "Globe"},
+  PlotRangePadding->Scaled[0.02],
+  Ticks->{{{0, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {4.288, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {1.048, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {2.144, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {3.24, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {0., 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}, {4.288, 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}}, {{0, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {1., 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {0., 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}, {1., 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}}, Automatic},
+  ViewPoint->{2.6324519069663888`, -10.02843701040368, -0.7075648987017805},
+  ViewVertical->{0., 0., 1.}]], "Output",
+ CellChangeTimes->{3.690086078593136*^9, 3.6900861431009617`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+if we wanted to graph 2 or  series on a graph then we  can use a 2D list, \
+where first row represents first value in all series and so on. \
+\>", "Item",
+ CellChangeTimes->{{3.690086128900497*^9, 3.6900861912290454`*^9}, {
+  3.6900862871108775`*^9, 3.690086313913745*^9}, {3.690086358493465*^9, 
+  3.690086366610509*^9}}],
+
+Cell["\<\
+each series is of a different color, so in following example we have 3 series \
+and 2 values for (similarly for Bar3D)\
+\>", "Item",
+ CellChangeTimes->{{3.690086128900497*^9, 3.6900861912290454`*^9}, {
+  3.6900862871108775`*^9, 3.6900863607729897`*^9}, {3.690086416678421*^9, 
+  3.690086422754469*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"blist", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"100", ",", "200", ",", "300"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"400", ",", "500", ",", "600"}], "}"}]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.69008619384379*^9, 3.6900862169612093`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarChart3D", "[", "blist", "]"}]], "Input",
+ CellChangeTimes->{{3.6900862191296515`*^9, 3.690086226074278*^9}, {
+  3.6900863992514524`*^9, 3.6900864007594557`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   StyleBox[{
+     {EdgeForm[GrayLevel[0.85]], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.02, 0.02}], Scaled[{0.985, 0.02, 0.02}], 
+        Scaled[{0.985, 0.98, 0.02}], Scaled[{0.015, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.02, 0.02}], Scaled[{0.985, 0.02, 0.02}], 
+        Scaled[{1, 0, 0}], Scaled[{0, 0, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.985, 0.02, 0.02}], Scaled[{1, 0, 0}], Scaled[{1, 1, 0}], 
+        Scaled[{0.985, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0.985, 0.98, 0.02}], 
+        Scaled[{1, 1, 0}], Scaled[{0, 0.99999, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.02, 0.02}], Scaled[{0, 0, 0}], 
+        Scaled[{0, 0.99999, 0}], Scaled[{0.015, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0, 0, 0}], Scaled[{1, 0, 0}], Scaled[{1, 1, 0}], 
+        Scaled[{0, 0.99999, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}]}, 
+     {Opacity[0], EdgeForm[None], 
+      CuboidBox[{{-0.32880000000000004`, -0.25, 0}, {6.904800000000001, 1.25, 
+        0.024}}]}, 
+     {EdgeForm[None], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0.985, 0.98, 0.02}], 
+        Scaled[{0.985, 0.98, 0.98}], Scaled[{0.015, 0.98, 0.98}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0.985, 0.98, 0.02}], 
+        Scaled[{1, 1, 0}], Scaled[{0, 0.99999, 0}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{1, 1, 0}], Scaled[{1, 1, 1}], Scaled[{0.985, 0.98, 0.98}], 
+        Scaled[{0.985, 0.98, 0.02}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.98}], Scaled[{0.985, 0.98, 0.98}], 
+        Scaled[{1, 1, 1}], Scaled[{0, 1, 1}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0.015, 0.98, 0.02}], Scaled[{0, 0.99999, 0}], 
+        Scaled[{0, 1, 1}], Scaled[{0.015, 0.98, 0.98}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}], 
+      Polygon3DBox[{
+       Scaled[{0, 0.99999, 0}], Scaled[{1, 1, 0}], Scaled[{1, 1, 1}], 
+        Scaled[{0, 1, 1}]},
+       VertexColors->{
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.928864, 0.6119472, 0.1262672]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.952576, 0.7412981333333333, 0.4175114666666666]], 
+         Directive[
+          Opacity[0.1], 
+          RGBColor[0.968384, 0.8275320888888889, 0.611674311111111]], 
+         Directive[
+          Opacity[0.1], 
+          GrayLevel[1]]}]}},
+    StripOnInput->False,
+    Lighting->{{"Ambient", 
+       GrayLevel[1]}}], 
+   {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+    0.1]}], {{}, {
+      {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+       0.1]}], 
+       TagBox[
+        TooltipBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             Directive[
+              EdgeForm[
+               Directive[
+                RGBColor[
+                0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+                AbsoluteThickness[1.5]]]], {}, {}], 
+            StyleBox[{
+              
+              GraphicsComplex3DBox[{{0., 0., 0.}, {0., 1., 0.}, {0., 1., 
+               100.}, {0., 0., 100.}, {1., 0., 0.}, {1., 1., 0.}, {1., 1., 
+               100.}, {1., 0., 100.}}, {
+                Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.48929, 0.339467, 0.078917], 
+                   RGBColor[0.48929, 0.339467, 0.078917]}], 
+                Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                   RGBColor[0.48929, 0.339467, 0.078917], 
+                   RGBColor[0.48929, 0.339467, 0.078917], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834]}], 
+                Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+                Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.97858, 0.678934, 0.157834]}], 
+                Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+                Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668]}]}]}, 
+             Lighting -> {{"Ambient", 
+                GrayLevel[1]}}, StripOnInput -> False]},
+           
+           ImageSizeCache->{{58.160413557744505`, 105.89550501902886`}, {
+            52.86482837839594, 89.88073590297427}}],
+          StatusArea[#, 100]& ,
+          TagBoxNote->"100"],
+         StyleBox["100", {"Graphics3DLabel"}, StripOnInput -> False]],
+        Annotation[#, 
+         Style[100, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+      {RGBColor[0.73, 0.344, 0.], EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+       TagBox[
+        TooltipBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             Directive[
+              EdgeForm[
+               Directive[
+                RGBColor[
+                0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+                AbsoluteThickness[1.5]]]], {}, {}], 
+            StyleBox[{
+              
+              GraphicsComplex3DBox[{{1.094, 0., 0.}, {1.094, 1., 0.}, {1.094, 
+               1., 200.}, {1.094, 0., 200.}, {2.0940000000000003`, 0., 0.}, {
+               2.0940000000000003`, 1., 0.}, {2.0940000000000003`, 1., 
+               200.}, {2.0940000000000003`, 0., 200.}}, {
+                Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.365, 0.172, 0.], 
+                   RGBColor[0.365, 0.172, 0.]}], 
+                Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                   RGBColor[0.365, 0.172, 0.], 
+                   RGBColor[0.365, 0.172, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.]}], 
+                Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8]}], 
+                Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.73, 0.344, 0.]}], 
+                Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.946, 0.8688, 0.8]}], 
+                Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.946, 0.8688, 0.8]}]}]}, Lighting -> {{"Ambient", 
+                GrayLevel[1]}}, StripOnInput -> False]},
+           
+           ImageSizeCache->{{106.27702937919275`, 154.52988119015936`}, {
+            20.00679813126044, 89.7118586142542}}],
+          StatusArea[#, 200]& ,
+          TagBoxNote->"200"],
+         StyleBox["200", {"Graphics3DLabel"}, StripOnInput -> False]],
+        Annotation[#, 
+         Style[200, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+      {RGBColor[0.374, 0.444, 0.788663], EdgeForm[{GrayLevel[0], Opacity[
+       0.1]}], 
+       TagBox[
+        TooltipBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             Directive[
+              EdgeForm[
+               Directive[
+                RGBColor[
+                0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+                AbsoluteThickness[1.5]]]], {}, {}], 
+            StyleBox[{
+              
+              GraphicsComplex3DBox[{{2.188, 0., 0.}, {2.188, 1., 0.}, {2.188, 
+               1., 300.}, {2.188, 0., 300.}, {3.188, 0., 0.}, {3.188, 1., 
+               0.}, {3.188, 1., 300.}, {3.188, 0., 300.}}, {
+                Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.187, 0.222, 0.3943315], 
+                   RGBColor[0.187, 0.222, 0.3943315]}], 
+                Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                   RGBColor[0.187, 0.222, 0.3943315], 
+                   RGBColor[0.187, 0.222, 0.3943315], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663]}], 
+                Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326]}], 
+                Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.374, 0.444, 0.788663]}], 
+                Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.8748, 0.8888, 0.9577326]}], 
+                Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.8748, 0.8888, 0.9577326]}]}]}, 
+             Lighting -> {{"Ambient", 
+                GrayLevel[1]}}, StripOnInput -> False]},
+           
+           ImageSizeCache->{{154.32035747987175`, 
+            203.06969942596152`}, {-12.801229115539172`, 89.54330995913551}}],
+          StatusArea[#, 300]& ,
+          TagBoxNote->"300"],
+         StyleBox["300", {"Graphics3DLabel"}, StripOnInput -> False]],
+        Annotation[#, 
+         Style[300, {"Graphics3DLabel"}], "Tooltip"]& ]}}}, {{}, {
+      {RGBColor[0.97858, 0.678934, 0.157834], EdgeForm[{GrayLevel[0], Opacity[
+       0.1]}], 
+       TagBox[
+        TooltipBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             Directive[
+              EdgeForm[
+               Directive[
+                RGBColor[
+                0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+                AbsoluteThickness[1.5]]]], {}, {}], 
+            StyleBox[{
+              
+              GraphicsComplex3DBox[{{3.3880000000000003`, 0., 0.}, {
+               3.3880000000000003`, 1., 0.}, {3.3880000000000003`, 1., 
+               400.}, {3.3880000000000003`, 0., 400.}, {4.388, 0., 0.}, {
+               4.388, 1., 0.}, {4.388, 1., 400.}, {4.388, 0., 400.}}, {
+                Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.48929, 0.339467, 0.078917], 
+                   RGBColor[0.48929, 0.339467, 0.078917]}], 
+                Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                   RGBColor[0.48929, 0.339467, 0.078917], 
+                   RGBColor[0.48929, 0.339467, 0.078917], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834]}], 
+                Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+                Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.97858, 0.678934, 0.157834]}], 
+                Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668]}], 
+                Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.97858, 0.678934, 0.157834], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668], 
+                   RGBColor[0.995716, 0.9357868, 0.8315668]}]}]}, 
+             Lighting -> {{"Ambient", 
+                GrayLevel[1]}}, StripOnInput -> False]},
+           
+           ImageSizeCache->{{206.9322354187707, 
+            256.2448256278112}, {-45.56308401444858, 89.35880706593161}}],
+          StatusArea[#, 400]& ,
+          TagBoxNote->"400"],
+         StyleBox["400", {"Graphics3DLabel"}, StripOnInput -> False]],
+        Annotation[#, 
+         Style[400, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+      {RGBColor[0.73, 0.344, 0.], EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+       TagBox[
+        TooltipBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             Directive[
+              EdgeForm[
+               Directive[
+                RGBColor[
+                0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+                AbsoluteThickness[1.5]]]], {}, {}], 
+            StyleBox[{
+              
+              GraphicsComplex3DBox[{{4.482, 0., 0.}, {4.482, 1., 0.}, {4.482, 
+               1., 500.}, {4.482, 0., 500.}, {5.482, 0., 0.}, {5.482, 1., 
+               0.}, {5.482, 1., 500.}, {5.482, 0., 500.}}, {
+                Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.365, 0.172, 0.], 
+                   RGBColor[0.365, 0.172, 0.]}], 
+                Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                   RGBColor[0.365, 0.172, 0.], 
+                   RGBColor[0.365, 0.172, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.]}], 
+                Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8]}], 
+                Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.73, 0.344, 0.]}], 
+                Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.946, 0.8688, 0.8]}], 
+                Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.73, 0.344, 0.], 
+                   RGBColor[0.946, 0.8688, 0.8], 
+                   RGBColor[0.946, 0.8688, 0.8]}]}]}, Lighting -> {{"Ambient", 
+                GrayLevel[1]}}, StripOnInput -> False]},
+           
+           ImageSizeCache->{{254.77312895171872`, 
+            304.64621763575997`}, {-78.26840407389136, 89.19094441277502}}],
+          StatusArea[#, 500]& ,
+          TagBoxNote->"500"],
+         StyleBox["500", {"Graphics3DLabel"}, StripOnInput -> False]],
+        Annotation[#, 
+         Style[500, {"Graphics3DLabel"}], "Tooltip"]& ]}, 
+      {RGBColor[0.374, 0.444, 0.788663], EdgeForm[{GrayLevel[0], Opacity[
+       0.1]}], 
+       TagBox[
+        TooltipBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             Directive[
+              EdgeForm[
+               Directive[
+                RGBColor[
+                0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+                AbsoluteThickness[1.5]]]], {}, {}], 
+            StyleBox[{
+              
+              GraphicsComplex3DBox[{{5.5760000000000005`, 0., 0.}, {
+               5.5760000000000005`, 1., 0.}, {5.5760000000000005`, 1., 
+               600.}, {5.5760000000000005`, 0., 600.}, {6.5760000000000005`, 
+               0., 0.}, {6.5760000000000005`, 1., 0.}, {6.5760000000000005`, 
+               1., 600.}, {6.5760000000000005`, 0., 600.}}, {
+                Polygon3DBox[{4, 3, 2, 1}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.187, 0.222, 0.3943315], 
+                   RGBColor[0.187, 0.222, 0.3943315]}], 
+                Polygon3DBox[{5, 6, 7, 8}, VertexColors -> {
+                   RGBColor[0.187, 0.222, 0.3943315], 
+                   RGBColor[0.187, 0.222, 0.3943315], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663]}], 
+                Polygon3DBox[{2, 3, 7, 6}, VertexColors -> {
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326]}], 
+                Polygon3DBox[{5, 8, 4, 1}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.374, 0.444, 0.788663]}], 
+                Polygon3DBox[{4, 8, 7, 3}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.8748, 0.8888, 0.9577326]}], 
+                Polygon3DBox[{2, 6, 5, 1}, VertexColors -> {
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.374, 0.444, 0.788663], 
+                   RGBColor[0.8748, 0.8888, 0.9577326], 
+                   RGBColor[0.8748, 0.8888, 0.9577326]}]}]}, 
+             Lighting -> {{"Ambient", 
+                GrayLevel[1]}}, StripOnInput -> False]},
+           
+           ImageSizeCache->{{302.5223345638169, 
+            352.97322132502995`}, {-111.26025305253461`, 89.02340743739478}}],
+          StatusArea[#, 600]& ,
+          TagBoxNote->"600"],
+         StyleBox["600", {"Graphics3DLabel"}, StripOnInput -> False]],
+        Annotation[#, 
+         Style[600, {"Graphics3DLabel"}], "Tooltip"]& ]}}}}, {{}, {}}, {}},
+  Axes->{True, True, True},
+  AxesEdge->{{-1, -1}, {1, -1}, {-1, 1}},
+  AxesLabel->{None, None, None},
+  BoxRatios->NCache[{1, 
+     Rational[1, 5], GoldenRatio^(-1)}, {1, 0.2, 0.6180339887498948}],
+  Boxed->False,
+  FaceGrids->{{{0, 1, 0}, {None, Automatic}}, {{0, 0, -1}, {
+     None, None}}, {{-1, 0, 0}, {None, None}}},
+  FaceGridsStyle->Automatic,
+  ImageSize->{355.40392194340836`, 208.9631109695671},
+  ImageSizeRaw->Automatic,
+  Lighting->"Neutral",
+  Method->{"RotationControl" -> "Globe"},
+  PlotRangePadding->Scaled[0.02],
+  Ticks->{{{0, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {6.5760000000000005`, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {1.0470000000000002`, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {2.141, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {0., 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}, {3.188, 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}, {4.4350000000000005`, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {5.529, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {3.3880000000000003`, 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}, {6.5760000000000005`, 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}}, {{0, 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {1., 
+      FormBox["\"\"", TraditionalForm], {0.005, 0}}, {0., 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}, {1., 
+      FormBox["\"\"", TraditionalForm], {0.01, 0}}}, Automatic},
+  ViewPoint->{-0.719057441676273, -10.365070573423944`, 0.21970071349701087`},
+  ViewVertical->{0., 0., 1.}]], "Output",
+ CellChangeTimes->{3.6900862265335855`*^9, 3.6900864054899597`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{654, 659},
-WindowMargins->{{Automatic, 21}, {Automatic, 0}},
+WindowMargins->{{Automatic, 292}, {-25, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{32000, 32000},
 PrintingOptions->{"Magnification"->1.,
@@ -4061,18 +5398,18 @@ StyleDefinitions->"Default.nb"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016"->{
-  Cell[118878, 4009, 193, 3, 44, "Print",
-   CellTags->"Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016"]},
  "Info-913b775d-8622-437f-a24c-3c3cd89342aa"->{
-  Cell[115890, 3943, 2193, 36, 88, "Print",
-   CellTags->"Info-913b775d-8622-437f-a24c-3c3cd89342aa"]}
+  Cell[115962, 3944, 2193, 36, 88, "Print",
+   CellTags->"Info-913b775d-8622-437f-a24c-3c3cd89342aa"]},
+ "Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016"->{
+  Cell[118950, 4010, 193, 3, 44, "Print",
+   CellTags->"Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016", 120487, 4061},
- {"Info-913b775d-8622-437f-a24c-3c3cd89342aa", 120637, 4064}
+ {"Info-913b775d-8622-437f-a24c-3c3cd89342aa", 176386, 5398},
+ {"Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016", 176538, 5401}
  }
 *)
 (*NotebookFileOutline
@@ -4512,10 +5849,10 @@ Cell[CellGroupData[{
 Cell[45733, 1554, 107, 1, 53, "Subsection"],
 Cell[CellGroupData[{
 Cell[45865, 1559, 192, 2, 31, "Item"],
-Cell[46060, 1563, 231, 5, 49, "Item"],
+Cell[46060, 1563, 231, 5, 31, "Item"],
 Cell[46294, 1570, 163, 2, 31, "Item"],
-Cell[46460, 1574, 298, 6, 49, "Item"],
-Cell[46761, 1582, 318, 6, 67, "Item"]
+Cell[46460, 1574, 298, 6, 31, "Item"],
+Cell[46761, 1582, 318, 6, 49, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -4525,9 +5862,9 @@ Cell[47257, 1599, 126, 1, 31, "Item"],
 Cell[47386, 1602, 133, 1, 31, "Item"],
 Cell[47522, 1605, 141, 1, 31, "Item"],
 Cell[47666, 1608, 210, 4, 31, "Item"],
-Cell[47879, 1614, 219, 4, 49, "Item"]
+Cell[47879, 1614, 219, 4, 31, "Item"]
 }, Open  ]],
-Cell[48113, 1621, 385, 7, 53, "Input"]
+Cell[48113, 1621, 385, 7, 32, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -4542,7 +5879,7 @@ Cell[CellGroupData[{
 Cell[49502, 1664, 163, 3, 31, "Item"],
 Cell[49668, 1669, 214, 3, 49, "Item"]
 }, Open  ]],
-Cell[49897, 1675, 405, 7, 53, "Input"],
+Cell[49897, 1675, 405, 7, 32, "Input"],
 Cell[CellGroupData[{
 Cell[50327, 1686, 198, 3, 32, "Input"],
 Cell[50528, 1691, 316, 7, 33, "Output"]
@@ -4576,7 +5913,7 @@ Cell[CellGroupData[{
 Cell[53287, 1791, 100, 1, 53, "Subsection"],
 Cell[CellGroupData[{
 Cell[53412, 1796, 133, 1, 31, "Item"],
-Cell[53548, 1799, 175, 4, 49, "Item"]
+Cell[53548, 1799, 175, 4, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[53760, 1808, 198, 4, 32, "Input"],
@@ -4649,13 +5986,13 @@ Cell[CellGroupData[{
 Cell[60222, 2033, 147, 2, 43, "Subsubsection"],
 Cell[CellGroupData[{
 Cell[60394, 2039, 125, 1, 31, "Item"],
-Cell[60522, 2042, 694, 12, 160, "Item"]
+Cell[60522, 2042, 694, 12, 124, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[61265, 2060, 102, 1, 43, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[61392, 2065, 442, 10, 73, "Input"],
+Cell[61392, 2065, 442, 10, 53, "Input"],
 Cell[61837, 2077, 171, 3, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -4668,7 +6005,7 @@ Cell[CellGroupData[{
 Cell[62405, 2100, 117, 1, 53, "Subsection"],
 Cell[CellGroupData[{
 Cell[62547, 2105, 185, 2, 31, "Item"],
-Cell[62735, 2109, 278, 5, 49, "Item"],
+Cell[62735, 2109, 278, 5, 31, "Item"],
 Cell[63016, 2116, 217, 3, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -4681,7 +6018,7 @@ Cell[63964, 2148, 233, 5, 33, "Output"]
 }, Open  ]],
 Cell[64212, 2156, 238, 4, 49, "Item"],
 Cell[CellGroupData[{
-Cell[64475, 2164, 368, 10, 53, "Input"],
+Cell[64475, 2164, 368, 10, 32, "Input"],
 Cell[64846, 2176, 141, 3, 33, "Output"]
 }, Open  ]]
 }, Open  ]]
@@ -4720,11 +6057,11 @@ Cell[67927, 2288, 118, 1, 53, "Subsection"],
 Cell[68048, 2291, 174, 4, 31, "Item"],
 Cell[CellGroupData[{
 Cell[68247, 2299, 276, 5, 32, "Input"],
-Cell[68526, 2306, 488, 9, 56, "Output"]
+Cell[68526, 2306, 488, 9, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[69051, 2320, 157, 3, 31, "Item"],
-Cell[69211, 2325, 175, 4, 49, "Item"]
+Cell[69211, 2325, 175, 4, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[69423, 2334, 99, 1, 32, "Input"],
@@ -4812,12 +6149,12 @@ Cell[CellGroupData[{
 Cell[76986, 2604, 291, 8, 32, "Input"],
 Cell[77280, 2614, 287, 8, 33, "Output"]
 }, Open  ]],
-Cell[77582, 2625, 173, 4, 49, "Item"],
+Cell[77582, 2625, 173, 4, 31, "Item"],
 Cell[CellGroupData[{
 Cell[77780, 2633, 162, 3, 32, "Input"],
 Cell[77945, 2638, 661, 18, 48, "Output"]
 }, Open  ]],
-Cell[78621, 2659, 402, 8, 53, "Input"],
+Cell[78621, 2659, 402, 8, 32, "Input"],
 Cell[CellGroupData[{
 Cell[79048, 2671, 96, 1, 32, "Input"],
 Cell[79147, 2674, 256, 7, 33, "Output"]
@@ -4830,14 +6167,14 @@ Cell[CellGroupData[{
 Cell[80087, 2708, 386, 8, 32, "Input"],
 Cell[80476, 2718, 697, 19, 48, "Output"]
 }, Open  ]],
-Cell[81188, 2740, 351, 6, 67, "Item"]
+Cell[81188, 2740, 351, 6, 49, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[81576, 2751, 109, 1, 78, "Section"],
 Cell[CellGroupData[{
 Cell[81710, 2756, 114, 1, 53, "Subsection"],
 Cell[CellGroupData[{
-Cell[81849, 2761, 255, 5, 49, "Item"],
+Cell[81849, 2761, 255, 5, 31, "Item"],
 Cell[82107, 2768, 274, 6, 31, "Item"],
 Cell[82384, 2776, 241, 3, 31, "Item"]
 }, Open  ]],
@@ -4866,7 +6203,7 @@ Cell[85177, 2878, 117, 3, 33, "Output"]
 Cell[CellGroupData[{
 Cell[85343, 2887, 130, 2, 53, "Subsection"],
 Cell[CellGroupData[{
-Cell[85498, 2893, 184, 4, 49, "Item"],
+Cell[85498, 2893, 184, 4, 31, "Item"],
 Cell[85685, 2899, 206, 4, 31, "Item"],
 Cell[85894, 2905, 153, 2, 31, "Item"]
 }, Open  ]],
@@ -4901,7 +6238,7 @@ Cell[89897, 3041, 676, 19, 66, "Output"]
 Cell[90588, 3063, 164, 3, 31, "Item"],
 Cell[CellGroupData[{
 Cell[90777, 3070, 161, 3, 32, "Input"],
-Cell[90941, 3075, 543, 14, 56, "Output"]
+Cell[90941, 3075, 543, 14, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[91521, 3094, 134, 2, 32, "Input"],
@@ -4943,8 +6280,8 @@ Cell[96791, 3278, 215, 7, 33, "Output"]
 Cell[CellGroupData[{
 Cell[97055, 3291, 123, 1, 78, "Section"],
 Cell[CellGroupData[{
-Cell[97203, 3296, 207, 4, 49, "Item"],
-Cell[97413, 3302, 219, 4, 49, "Item"]
+Cell[97203, 3296, 207, 4, 31, "Item"],
+Cell[97413, 3302, 219, 4, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[97669, 3311, 287, 8, 32, "Input"],
@@ -4978,7 +6315,7 @@ Cell[CellGroupData[{
 Cell[102452, 3480, 133, 2, 32, "Input"],
 Cell[102588, 3484, 640, 18, 48, "Output"]
 }, Open  ]],
-Cell[103243, 3505, 244, 4, 49, "Item"],
+Cell[103243, 3505, 244, 4, 31, "Item"],
 Cell[CellGroupData[{
 Cell[103512, 3513, 341, 9, 32, "Input"],
 Cell[103856, 3524, 71, 1, 33, "Output"]
@@ -4993,7 +6330,7 @@ Cell[104625, 3553, 173, 4, 32, "Input"],
 Cell[104801, 3559, 118, 3, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[104956, 3567, 267, 5, 49, "Item"],
+Cell[104956, 3567, 267, 5, 31, "Item"],
 Cell[105226, 3574, 124, 1, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -5034,7 +6371,7 @@ Cell[109180, 3715, 108, 1, 78, "Section"],
 Cell[109291, 3718, 188, 4, 49, "Item"],
 Cell[109482, 3724, 343, 9, 55, "Code"],
 Cell[CellGroupData[{
-Cell[109850, 3737, 177, 4, 49, "Item"],
+Cell[109850, 3737, 177, 4, 31, "Item"],
 Cell[110030, 3743, 143, 1, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -5042,9 +6379,9 @@ Cell[110210, 3749, 501, 12, 76, "Code"],
 Cell[110714, 3763, 71, 1, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110822, 3769, 230, 4, 49, "Item"],
-Cell[111055, 3775, 220, 4, 49, "Item"],
-Cell[111278, 3781, 200, 4, 49, "Item"]
+Cell[110822, 3769, 230, 4, 31, "Item"],
+Cell[111055, 3775, 220, 4, 31, "Item"],
+Cell[111278, 3781, 200, 4, 31, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[111515, 3790, 120, 2, 32, "Input"],
@@ -5074,45 +6411,70 @@ Cell[113566, 3864, 97, 1, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[113712, 3871, 112, 1, 78, "Section"],
-Cell[113827, 3874, 248, 5, 49, "Item"],
-Cell[114078, 3881, 273, 7, 32, "Input"],
+Cell[113827, 3874, 284, 6, 31, "Item"],
+Cell[114114, 3882, 273, 7, 32, "Input"],
 Cell[CellGroupData[{
-Cell[114376, 3892, 305, 8, 32, "Input"],
-Cell[114684, 3902, 126, 3, 33, "Output"]
+Cell[114412, 3893, 305, 8, 32, "Input"],
+Cell[114720, 3903, 126, 3, 33, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[114859, 3911, 122, 1, 78, "Section"],
+Cell[114895, 3912, 122, 1, 78, "Section"],
 Cell[CellGroupData[{
-Cell[115006, 3916, 132, 1, 31, "Item"],
-Cell[115141, 3919, 260, 5, 49, "Item"],
-Cell[115404, 3926, 155, 3, 31, "Item"]
+Cell[115042, 3917, 132, 1, 31, "Item"],
+Cell[115177, 3920, 296, 5, 31, "Item"],
+Cell[115476, 3927, 155, 3, 31, "Item"]
 }, Open  ]],
-Cell[115574, 3932, 175, 3, 32, "Input"],
+Cell[115646, 3933, 175, 3, 32, "Input"],
 Cell[CellGroupData[{
-Cell[115774, 3939, 113, 2, 32, "Input"],
-Cell[115890, 3943, 2193, 36, 88, "Print",
+Cell[115846, 3940, 113, 2, 32, "Input"],
+Cell[115962, 3944, 2193, 36, 88, "Print",
  CellTags->"Info-913b775d-8622-437f-a24c-3c3cd89342aa"]
 }, Open  ]],
-Cell[118098, 3982, 223, 6, 32, "Input"],
-Cell[118324, 3990, 204, 4, 31, "Item"],
-Cell[118531, 3996, 203, 5, 32, "Input"],
+Cell[118170, 3983, 223, 6, 32, "Input"],
+Cell[118396, 3991, 204, 4, 31, "Item"],
+Cell[118603, 3997, 203, 5, 32, "Input"],
 Cell[CellGroupData[{
-Cell[118759, 4005, 116, 2, 32, "Input"],
-Cell[118878, 4009, 193, 3, 44, "Print",
+Cell[118831, 4006, 116, 2, 32, "Input"],
+Cell[118950, 4010, 193, 3, 44, "Print",
  CellTags->"Info-c98bfd7b-cf22-4e0e-8b15-14e752c8c016"]
 }, Open  ]],
-Cell[119086, 4015, 71, 1, 32, "Input"]
+Cell[119158, 4016, 71, 1, 32, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[119194, 4021, 111, 1, 78, "Section"],
+Cell[119266, 4022, 111, 1, 78, "Section"],
 Cell[CellGroupData[{
-Cell[119330, 4026, 239, 4, 49, "Item"],
-Cell[119572, 4032, 258, 5, 67, "Item"]
+Cell[119402, 4027, 239, 4, 31, "Item"],
+Cell[119644, 4033, 258, 5, 31, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[119869, 4042, 110, 1, 79, "Chapter"]
+Cell[CellGroupData[{
+Cell[119963, 4045, 110, 1, 79, "Chapter"],
+Cell[CellGroupData[{
+Cell[120098, 4050, 95, 1, 78, "Section"],
+Cell[120196, 4053, 249, 7, 32, "Input"],
+Cell[120448, 4062, 163, 3, 31, "Item"],
+Cell[CellGroupData[{
+Cell[120636, 4069, 133, 2, 32, "Input"],
+Cell[120772, 4073, 7029, 188, 252, "Output"]
+}, Open  ]],
+Cell[127816, 4264, 134, 1, 31, "Item"],
+Cell[CellGroupData[{
+Cell[127975, 4269, 137, 2, 32, "Input"],
+Cell[128115, 4273, 20266, 473, 339, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[148418, 4751, 332, 6, 49, "Item"],
+Cell[148753, 4759, 312, 6, 49, "Item"]
+}, Open  ]],
+Cell[149080, 4768, 328, 10, 32, "Input"],
+Cell[CellGroupData[{
+Cell[149433, 4782, 188, 3, 32, "Input"],
+Cell[149624, 4787, 26215, 590, 246, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
