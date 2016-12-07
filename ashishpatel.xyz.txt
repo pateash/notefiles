@@ -1,0 +1,16 @@
+
+WEBSITE - ashishpatel.xyz
+
+FTP INFO-
+--------
+host-ashishpatel.xyz
+client-a5830114
+password-200893
+port- NOT REQUIRED
+
+
+DATABASE INFO-
+-------------
+dbname- a5830114_mydb
+username-a5830114_myself
+password-ashish200893
